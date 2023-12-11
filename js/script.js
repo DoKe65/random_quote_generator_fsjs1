@@ -79,10 +79,6 @@ const quotes = [
 
 /***
  * `getRandomQuote` function
- * 
-***/
-/**
- * 
  * @param {array} arr - The array to pass to the function
  * @returns {object} - Returns the object at the randomly generated index from the array passed to the function 
  */
@@ -98,7 +94,13 @@ console.log(getRandomQuote(quotes))
  * `printQuote` function
 ***/
 
-
+/***
+ * Prevent previously displayed quotes from being displayed again
+ * Store current index in array
+ * test current random index against content of array
+ * only display, if index was not used for the last 6 attempts. 
+ * When the array of used indexes reaches the number of 7, empty the array
+ */
 
 /***
  * click event listener for the print quote button
