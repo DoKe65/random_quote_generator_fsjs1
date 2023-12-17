@@ -115,6 +115,17 @@ h1 {
   font-style: normal;
 }
 
+span.resource > a {
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.resource:before {
+  content: ", ";
+  font-style: normal;
+}
+
 @media (min-width: 768px) {
   body {
     padding: 25px;
