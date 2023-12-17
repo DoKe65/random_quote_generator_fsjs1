@@ -55,7 +55,7 @@ const quotes = [
     quote: "When the whole world is silent, even one voice becomes powerful.",
     source: "Malala Yousafzai",
     citation: "Quote from a speech to an United Nations panel, New York",
-    year: "July 12, 2013",
+    year: 2013,
     resource: stacker
   },
   {
