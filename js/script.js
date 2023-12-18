@@ -102,7 +102,7 @@ const getRandomQuote = arr => {
   while ( indexes.includes(index) );
   indexes.push(index);
   
-  if (indexes.length = 7) {
+  if (indexes.length === 7) {
     indexes = [];
   }
 
