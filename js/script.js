@@ -90,7 +90,7 @@ let indexes = [];
  * 1. stores index in a variable
  * 2. generates a random number from 0 to the length of the quotes array, if not already used and stored in the indexes array
  * 3. adds the current generated random value into the indexes array
- * 4. When array contains 7 indexes, reset (empty) array "indexes"
+ * 4. When array contains 7 indexes, remove the first item of the array
  * 5. returns the quote object
  */
 const getRandomQuote = arr => {
@@ -103,7 +103,7 @@ const getRandomQuote = arr => {
   indexes.push(index);
   
   if (indexes.length === 7) {
-    indexes = [];
+    indexes.shift();
   }
 
   return arr[index];
